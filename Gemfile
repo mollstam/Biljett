@@ -37,4 +37,7 @@ end
 group :cucumber do
   gem 'cucumber-rails'
   gem 'capybara'
-end 
+end
+
+gem 'devise'
+gem 'escape_utils'
