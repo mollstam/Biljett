@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/bmabey/email-spec.git
+  revision: 1c8d705
+  specs:
+    email_spec (1.0.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -120,6 +126,7 @@ DEPENDENCIES
   capybara
   cucumber-rails
   devise
+  email_spec!
   escape_utils
   mysql (= 2.8.1)
   rails (= 3.0.0)

@@ -11,7 +11,11 @@
 <%= notice %>
 <%= alert %>
 <h1><%= link_to "Biljett", root_path %></h1>
-<%= link_to "Sign up", new_user_registration_path %>
+<% if !user_signed_in? %>
+    <%= link_to "Sign up", new_user_registration_path %>
+<% else %>
+    Signed in as <%= current_user.email %>
+<% end %>
 <%= yield %>
 
 </body>

@@ -41,3 +41,4 @@ end
 
 gem 'devise'
 gem 'escape_utils'
+gem 'email_spec', :git => "git://github.com/bmabey/email-spec.git"
