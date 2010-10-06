@@ -14,9 +14,4 @@ Feature: Signing in
     
   Scenario: Signing in via form
     Given "user@biljett.com" has confirmed their account
-    And I am on the homepage
-    When I follow "Sign in"
-    And I fill in "Email" with "user@biljett.com"
-    And I fill in "Password" with "password"
-    And I press "Sign in"
-    Then I should see "Signed in successfully"
+    And I am signed in as them
