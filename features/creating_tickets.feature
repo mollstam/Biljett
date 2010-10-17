@@ -22,6 +22,12 @@ Feature: Creating Tickets
     And I press "Create Ticket"
     Then I should see "Ticket has been created"
     Then I should see "Created by user@biljett.com"
+    And I follow "Add Ticket"
+    Then I should see "New Ticket"
+    When I fill in "Title" with "Short tags are bad"
+    And I fill in "Description" with "They will kill you in the long run"
+    And I press "Create Ticket"
+    Then I should see "Ticket has been created"
     
   Scenario: Creating a ticket without valid attributes failes
     When I press "Create Ticket"

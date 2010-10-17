@@ -53,7 +53,9 @@ Biljett::Application.routes.draw do
   # root :to => "welcome#index"
   root :to =>"projects#index"
   resources :projects do
-    resources :tickets
+    resources :tickets do
+      resources :tickets
+    end
   end
 
   # See how all your routes lay out with "rake routes"

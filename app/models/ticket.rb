@@ -1,4 +1,6 @@
 class Ticket < ActiveRecord::Base
+  has_many :children, :class_name => 'Ticket'
+  belongs_to :parent, :class_name => 'Ticket'
   belongs_to :project
   belongs_to :user
   
